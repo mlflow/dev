@@ -7,7 +7,7 @@ on:
 jobs:
   main:
     # Run this if the run name contains circleci
-    if: contains(github.event.check_run.name, 'circleci') || contains(github.event.check_run.name, 'CircleCI')
+    # if: contains(github.event.check_run.name, 'circleci') || contains(github.event.check_run.name, 'CircleCI')
     runs-on: ubuntu-latest
     permissions:
       statuses: read # preview_docs.py checks PR statuses
