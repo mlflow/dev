@@ -1,11 +1,13 @@
 name: Preview docs
 
 on:
-  pull_request_target:
+  check_run:
+    types: completed
 
 jobs:
   main:
-    if: github.repository == 'mlflow/mlflow'
+    # Run this if the run name contains circleci
+    if: contains(github.event.check_run.name, 'circleci') || contains(github.event.check_run.name, 'CircleCI')
     runs-on: ubuntu-latest
     permissions:
       statuses: read # preview_docs.py checks PR statuses
@@ -19,10 +21,15 @@ jobs:
           pip install requests
       - name: Create preview link
         env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CIRCLE_TOKEN: ${{ secrets.CIRCLE_TOKEN }}
+          # CIRCLE_TOKEN: ${{ secrets.CIRCLE_TOKEN }}
+          HEAD_SHA: ${{ github.event.check_run.head_sha }}
+          PULL_NUMBER: ${{ github.event.check_run.pull_requests[0].number }}
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
         run: |
-          python dev/preview_docs.py \
-            --commit-sha ${{ github.event.pull_request.head.sha }} \
-            --pull-number ${{ github.event.pull_request.number }} \
-            --workflow-run-id ${{ github.run_id }}
+          echo $GITHUB_CONTEXT
+          # python dev/preview_docs.py \
+          #   --commit-sha $HEAD_SHA \
+          #   --pull-number $PULL_NUMBER \
+          #   --workflow-run-id $WORKFLOW_RUN_ID \
