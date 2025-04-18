@@ -106,11 +106,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "2.4.1",
-            "maximum": "2.7.19"
+            "maximum": "2.8.0"
         },
         "autologging": {
             "minimum": "2.4.1",
-            "maximum": "2.7.19"
+            "maximum": "2.8.0"
         }
     },
     "onnx": {
@@ -231,11 +231,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "4.35.2",
-            "maximum": "4.51.2"
+            "maximum": "4.51.3"
         },
         "autologging": {
             "minimum": "4.35.2",
-            "maximum": "4.51.2"
+            "maximum": "4.51.3"
         }
     },
     "openai": {
@@ -244,11 +244,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "1.0.1",
-            "maximum": "1.73.0"
+            "maximum": "1.75.0"
         },
         "autologging": {
             "minimum": "1.17.0",
-            "maximum": "1.73.0"
+            "maximum": "1.75.0"
         }
     },
     "dspy": {
@@ -283,11 +283,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "0.2.0",
-            "maximum": "0.3.29"
+            "maximum": "0.3.30"
         },
         "autologging": {
             "minimum": "0.2.0",
-            "maximum": "0.3.29"
+            "maximum": "0.3.30"
         }
     },
     "llama_index": {
@@ -297,11 +297,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "0.10.44",
-            "maximum": "0.12.30"
+            "maximum": "0.12.31"
         },
         "autologging": {
             "minimum": "0.10.44",
-            "maximum": "0.12.30"
+            "maximum": "0.12.31"
         }
     },
     "autogen": {
@@ -310,7 +310,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.2.36",
-            "maximum": "0.2.40"
+            "maximum": "0.5.3"
         }
     },
     "gemini": {
@@ -320,7 +320,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.0.0",
-            "maximum": "1.10.0"
+            "maximum": "1.11.0"
         }
     },
     "anthropic": {
@@ -349,7 +349,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.0.0",
-            "maximum": "1.6.0"
+            "maximum": "1.7.0"
         }
     },
     "sentence_transformers": {
@@ -358,7 +358,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "2.2.2",
-            "maximum": "4.0.2"
+            "maximum": "4.1.0"
         }
     },
     "johnsnowlabs": {
@@ -385,7 +385,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.52.9",
-            "maximum": "1.66.0"
+            "maximum": "1.66.2"
         }
     },
     "groq": {
@@ -404,7 +404,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.33.0",
-            "maximum": "1.37.33"
+            "maximum": "1.37.35"
         }
     }
 }
