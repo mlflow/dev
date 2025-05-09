@@ -1,5 +1,38 @@
 # CHANGELOG
 
+## 2.22.1 (2025-05-09)
+
+MLflow 2.22.1 includes several major features and improvements
+
+Breaking changes:
+
+- [Tracking] Emit a warning for `mlflow.get_artifact_uri()` usage outside active run (#12902, @Shashank1202)
+
+Features:
+
+- [Models] Add compression to pyfunc log model (#14700, @antbbn)
+- [] Gemini AI Gateway - Chat completion and completion + Unit Test (#15069, @joelrobin18)
+- [Tracking] PydanticAI Autologging (#15553, @joelrobin18)
+- [Tracking] Support setting databricks auth profile by 'DATABRICKS_CONFIG_PROFILE' environ variable. (#15587, @WeichenXu123)
+- [Tracking] create mlflow tracing for smolagents (#15574, @y-okt)
+- [Tracking] Merge Tracing SDK feature branch (#15561, @B-Step62)
+- [] MLflow 3.0 (#13211, @harupy)
+- [Artifacts / UI] Support for video artifacts (#15518, @joelrobin18)
+
+Bug fixes:
+
+- [Tracking] Fix global_guideline_adherence (#15572, @artjen)
+- [] Log Resources from SystemAuthPolicy in CreateModelVersion (#15485, @aravind-segu)
+
+Documentation updates:
+
+- [Models] ResponsesAgent interface update (#15601, @bbqiu)
+- [Docs] Spark UDF Doc update (#15586, @WeichenXu123)
+
+Small bug fixes and documentation updates:
+
+#15645, #15612, #15533, #15607, #15522, @serena-ruan; #15649, #15647, #15640, #15638, #15630, #15627, #15624, #15622, #15558, #15610, #15577, #15575, #15545, #15576, #15559, #15563, #15555, #15557, #15548, #15551, #15547, #15542, #15536, #15524, #15531, #15525, #15520, #15521, #15502, #15499, @harupy; #15605, #15639, #15642, #15619, #15618, #15611, #15597, #15589, #15580, #15593, #15437, #15584, #15582, #15448, @B-Step62; #15608, #15543, #15573, @dhruyads; #15621, #15567, #15566, #15523, #15479, @TomeHirata; #15613, #15473, @joelrobin18; #15617, @raymondzhou-db; #15588, #15602, #15581, @rohitarun-db; #15606, @ShaylanDias; #15598, @WeichenXu123; #15569, @Anand1923; #15578, @y-okt; #14790, @singh-kristian; #14129, @jamblejoe; #15552, @BenWilson2; #14197, @clarachristiansen; #15505, @Conor0Callaghan; #15509, @tr33k; #15507, @vzamboulingame; #15459, @UnMelow
+
 ## 2.22.0 (2025-04-24)
 
 MLflow 2.22.0 brings important bug fixes and improves the UI and tracking capabilities.
