@@ -1,5 +1,47 @@
 # CHANGELOG
 
+## 2.22.1 (2025-05-16)
+
+MLflow 2.22.1 includes several major features and improvements
+
+Breaking changes:
+
+- [Tracking] Update DataFrame schema returned from `mlflow.search_trace()` to be V3 format (#15643, @B-Step62)
+- [Tracking] Emit a warning for `mlflow.get_artifact_uri()` usage outside active run (#12902, @Shashank1202)
+
+Features:
+
+- [Tracking] Support tracing ResponsesAgent predict_stream (#15762, @bbqiu)
+- [Tracking] Introduce client and fluent APIs for `LogLoggedModelParams` (#15717, @artjen)
+- [Models] Support predict_stream in dspy flavor (#15678, @TomeHirata)
+- [Tracking] Record notebook and git metadata in trace metadata (#15650, @B-Step62)
+- [Model Registry] Added search prompts function to list all the prompts registered (#15445, @joelrobin18)
+- [Models] Add compression to pyfunc log model (#14700, @antbbn)
+- [] Gemini AI Gateway - Chat completion and completion + Unit Test (#15069, @joelrobin18)
+- [Tracking] PydanticAI Autologging (#15553, @joelrobin18)
+- [Tracking] Support setting databricks auth profile by 'DATABRICKS_CONFIG_PROFILE' environ variable. (#15587, @WeichenXu123)
+- [Tracking] create mlflow tracing for smolagents (#15574, @y-okt)
+- [Tracking] Merge Tracing SDK feature branch (#15561, @B-Step62)
+- [] MLflow 3.0 (#13211, @harupy)
+- [Artifacts / UI] Support for video artifacts (#15518, @joelrobin18)
+
+Bug fixes:
+
+- [] Improve error handling if tracking uri is not set when running 'mlflow gc' (#11773, @oleg-z)
+- [Tracking] Trace search: Avoid spawning threads for span fetching if include_spans=False (#15634, @dbczumar)
+- [Tracking] Fix global_guideline_adherence (#15572, @artjen)
+- [] Log Resources from SystemAuthPolicy in CreateModelVersion (#15485, @aravind-segu)
+
+Documentation updates:
+
+- [Docs] [DOC-FIX] Document models:/ URIs explicitly in OSS MLflow docs (#15727, @WeichenXu123)
+- [Models] ResponsesAgent interface update (#15601, @bbqiu)
+- [Docs] Spark UDF Doc update (#15586, @WeichenXu123)
+
+Small bug fixes and documentation updates:
+
+#15773, #15776, #15756, #15767, #15766, #15765, #15746, #15747, #15748, #15751, #15743, #15731, #15720, #15722, #15670, #15614, #15715, #15677, #15708, #15673, #15680, #15686, #15671, #15657, #15669, #15664, #15675, #15667, #15666, #15668, #15651, #15649, #15647, #15640, #15638, #15630, #15627, #15624, #15622, #15558, #15610, #15577, #15575, #15545, #15576, #15559, #15563, #15555, #15557, #15548, #15551, #15547, #15542, #15536, #15524, #15531, #15525, #15520, #15521, #15502, #15499, @harupy; #15739, #15695, #15654, #15694, #15655, #15653, #15608, #15543, #15573, @dhruyads; #15774, #15769, #15768, #15770, #15755, #15771, #15737, #15690, #15733, #15730, #15687, #15660, #15735, #15688, #15705, #15590, #15663, #15665, #15658, #15594, #15620, #15644, #15648, #15605, #15639, #15642, #15619, #15618, #15611, #15597, #15589, #15580, #15593, #15437, #15584, #15582, #15448, @B-Step62; #15596, @mrharishkumar; #15726, #15752, #15745, #15753, #15738, #15681, #15684, #15682, #15702, #15679, #15623, #15645, #15612, #15533, #15607, #15522, @serena-ruan; #15676, #15750, @dbczumar; #15742, #15723, #15633, #15606, @ShaylanDias; #15703, #15637, #15613, #15473, @joelrobin18; #15749, #15706, #15683, #15728, #15732, #15707, #15621, #15567, #15566, #15523, #15479, @TomeHirata; #15636, #15659, #15616, #15617, @raymondzhou-db; #15674, #15598, @WeichenXu123; #15691, @artjen; #15698, @prithvikannan; #15697, #15588, #15602, #15581, @rohitarun-db; #15631, @hubertzub-db; #15569, @Anand1923; #15578, @y-okt; #14790, @singh-kristian; #14129, @jamblejoe; #15552, @BenWilson2; #14197, @clarachristiansen; #15505, @Conor0Callaghan; #15509, @tr33k; #15507, @vzamboulingame; #15459, @UnMelow
+
 ## 2.22.0 (2025-04-24)
 
 MLflow 2.22.0 brings important bug fixes and improves the UI and tracking capabilities.
