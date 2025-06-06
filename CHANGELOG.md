@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2.22.2 (2025-06-06)
+
+MLflow 2.22.2 includes several major features and improvements
+
+Small bug fixes and documentation updates:
+
+#16103, #15538, #16055, @B-Step62; #16114, #16080, @copilot-swe-agent; #16106, @TomeHirata; #16101, @harupy; #16072, @AveshCSingh; #16098, @dbczumar; #16102, #16062, @smoorjani; #16099, @rohitarun-db
+
 ## 2.22.1 (2025-06-06)
 
 MLflow 2.22.1 includes several major features and improvements
