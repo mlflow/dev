@@ -222,11 +222,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "1.0.1",
-            "maximum": "1.85.0"
+            "maximum": "1.86.0"
         },
         "autologging": {
             "minimum": "1.17.0",
-            "maximum": "1.85.0"
+            "maximum": "1.86.0"
         }
     },
     "dspy": {
@@ -275,11 +275,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "0.10.44",
-            "maximum": "0.12.41"
+            "maximum": "0.12.42"
         },
         "autologging": {
             "minimum": "0.10.44",
-            "maximum": "0.12.41"
+            "maximum": "0.12.42"
         }
     },
     "ag2": {
@@ -309,7 +309,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.0.0",
-            "maximum": "1.19.0"
+            "maximum": "1.20.0"
         }
     },
     "anthropic": {
@@ -318,7 +318,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.30.0",
-            "maximum": "0.53.0"
+            "maximum": "0.54.0"
         }
     },
     "crewai": {
@@ -328,7 +328,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.80.0",
-            "maximum": "0.126.0"
+            "maximum": "0.130.0"
         }
     },
     "pydantic_ai": {
@@ -348,7 +348,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.14.0",
-            "maximum": "1.17.0"
+            "maximum": "1.18.0"
         }
     },
     "mistral": {
@@ -358,7 +358,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.0.0",
-            "maximum": "1.8.1"
+            "maximum": "1.8.2"
         }
     },
     "sentence_transformers": {
@@ -403,7 +403,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.13.0",
-            "maximum": "0.26.0"
+            "maximum": "0.27.0"
         }
     },
     "bedrock": {
@@ -413,7 +413,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.33.0",
-            "maximum": "1.38.33"
+            "maximum": "1.38.35"
         }
     }
 }
