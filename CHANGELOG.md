@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 3.1.1 (2025-06-13)
+
+MLflow 3.1.1 includes several major features and improvements
+
+Documentation updates:
+
+- [Docs] Fix footer rendering in docs for light mode display (#16214, @BenWilson2)
+
+Small bug fixes and documentation updates:
+
+#16243, #16231, #16226, #16221, @copilot-swe-agent; #16237, #16234, #16219, #16216, #16207, @harupy; #16218, #16170, #16217, @serena-ruan; #16210, #16204, #16208, @frontsideair; #16223, @TomeHirata; #16212, @B-Step62; #16205, @daniellok-db
+
 ## 3.1 (2025-06-11)
 
 MLflow 3 includes several major features and improvements
