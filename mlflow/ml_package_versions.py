@@ -70,11 +70,11 @@ _ML_PACKAGE_VERSIONS = {
             "pip_release": "xgboost"
         },
         "models": {
-            "minimum": "1.7.6",
+            "minimum": "2.0.0",
             "maximum": "3.0.2"
         },
         "autologging": {
-            "minimum": "1.7.6",
+            "minimum": "2.0.0",
             "maximum": "3.0.2"
         }
     },
@@ -187,7 +187,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "0.42.1",
-            "maximum": "0.47.2"
+            "maximum": "0.48.0"
         }
     },
     "paddle": {
@@ -222,11 +222,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "1.0.1",
-            "maximum": "1.85.0"
+            "maximum": "1.88.0"
         },
         "autologging": {
             "minimum": "1.17.0",
-            "maximum": "1.85.0"
+            "maximum": "1.88.0"
         }
     },
     "dspy": {
@@ -275,11 +275,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "0.10.44",
-            "maximum": "0.12.41"
+            "maximum": "0.12.43"
         },
         "autologging": {
             "minimum": "0.10.44",
-            "maximum": "0.12.41"
+            "maximum": "0.12.43"
         }
     },
     "ag2": {
@@ -289,7 +289,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.7.0",
-            "maximum": "0.9.2"
+            "maximum": "0.9.3"
         }
     },
     "autogen": {
@@ -309,7 +309,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.0.0",
-            "maximum": "1.19.0"
+            "maximum": "1.21.0"
         }
     },
     "anthropic": {
@@ -318,7 +318,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.30.0",
-            "maximum": "0.53.0"
+            "maximum": "0.54.0"
         }
     },
     "crewai": {
@@ -328,7 +328,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.80.0",
-            "maximum": "0.126.0"
+            "maximum": "0.130.0"
         }
     },
     "pydantic_ai": {
@@ -338,7 +338,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.1.9",
-            "maximum": "0.2.16"
+            "maximum": "0.3.1"
         }
     },
     "smolagents": {
@@ -348,7 +348,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.14.0",
-            "maximum": "1.17.0"
+            "maximum": "1.18.0"
         }
     },
     "mistral": {
@@ -358,7 +358,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.0.0",
-            "maximum": "1.8.1"
+            "maximum": "1.8.2"
         }
     },
     "sentence_transformers": {
@@ -375,7 +375,7 @@ _ML_PACKAGE_VERSIONS = {
             "pip_release": "johnsnowlabs"
         },
         "models": {
-            "minimum": "4.4.8",
+            "minimum": "4.4.9",
             "maximum": "6.0.2"
         }
     },
@@ -385,7 +385,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "1.3.0",
-            "maximum": "1.18.0"
+            "maximum": "1.18.1"
         }
     },
     "litellm": {
@@ -403,7 +403,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.13.0",
-            "maximum": "0.26.0"
+            "maximum": "0.28.0"
         }
     },
     "bedrock": {
@@ -413,7 +413,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.33.0",
-            "maximum": "1.38.33"
+            "maximum": "1.38.39"
         }
     }
 }
