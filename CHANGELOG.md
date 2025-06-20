@@ -1,5 +1,36 @@
 # CHANGELOG
 
+## 3.1.1 (2025-06-20)
+
+MLflow 3.1.1 includes several major features and improvements
+
+Features:
+
+- [Tracking] Support pagination in get-history of FileStore and SqlAlchemyStore (#16325, @TomeHirata)
+- [Scoring] Make spark_udf support 'uv' env manager (#16292, @WeichenXu123)
+- [Docker / Tracking] Add support for responses.parse calls in oai autologger (#16245, @dipakkrishnan)
+- [Tracking] Anthropic token count (#16246, @joelrobin18)
+- [Tracking] Groq token count (#16258, @joelrobin18)
+
+Bug fixes:
+
+- [Models] Fix bedrock provider, configured inference profile compatibility (#15604, @lloydhamilton)
+- [Tracking] Specify attribute.run_id when search_traces filters by run_id (#16295, @artjen)
+- [] Fix graphql batching attacks (#16227, @serena-ruan)
+- [Model Registry] Make the chunk size configurable in DatabricksSDKModelsArtifactRepository (#16247, @TomeHirata)
+
+Documentation updates:
+
+- [Docs] Fix(docs): Resolve self-referencing 'Next' link on GenAI Tracing overview page (#16334, @mohammadsubhani)
+- [Docs] Update the docs selector dropdown (#16280, @BenWilson2)
+- [Docs] Update utm_source for source tracking to signup URL (#16316, @BenWilson2)
+- [Docs] Update docs font sizing and link coloring (#16281, @BenWilson2)
+- [Docs] Fix footer rendering in docs for light mode display (#16214, @BenWilson2)
+
+Small bug fixes and documentation updates:
+
+#16352, #16350, #16323, #15788, #16327, #16324, #16279, #16263, #16256, #16237, #16234, #16219, #16216, #16207, @harupy; #16348, #16347, #16290, #16286, #16283, #16271, #16223, @TomeHirata; #16277, #16308, #16276, #16275, #16218, #16170, #16217, @serena-ruan; #16321, #16311, #16307, #16273, #16268, #16265, #16112, #16243, #16231, #16226, #16221, @copilot-swe-agent; #16262, @raymondzhou-db; #16303, #16212, @B-Step62; #16293, @WeichenXu123; #16210, #16204, #16208, @frontsideair; #16205, @daniellok-db
+
 ## 3.1 (2025-06-11)
 
 MLflow 3 includes several major features and improvements
