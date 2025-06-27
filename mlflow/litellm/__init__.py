@@ -17,7 +17,6 @@ FLAVOR_NAME = "litellm"
 _logger = logging.getLogger(__name__)
 
 
-@experimental(version="2.19.0")
 def autolog(
     log_traces: bool = True,
     disable: bool = False,

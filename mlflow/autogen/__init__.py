@@ -23,7 +23,6 @@ _logger = logging.getLogger(__name__)
 FLAVOR_NAME = "autogen"
 
 
-@experimental(version="2.16.0")
 @autologging_integration(FLAVOR_NAME)
 def autolog(
     log_traces: bool = True,

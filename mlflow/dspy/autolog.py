@@ -14,7 +14,6 @@ from mlflow.utils.autologging_utils import (
 )
 
 
-@experimental(version="2.18.0")
 def autolog(
     log_traces: bool = True,
     log_traces_from_compile: bool = False,
