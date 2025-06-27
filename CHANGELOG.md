@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 3.2.0 (2025-06-27)
+
+MLflow 3.2.0 includes several major features and improvements
+
+Features:
+
+- [Artifacts / Tracking] Update ArtifactRepository constructors to accept tracking_uri parameter (#16442, @harupy)
+
+Small bug fixes and documentation updates:
+
+#16473, #16465, #16456, #16458, #16457, #16394, #16449, #16445, #16433, #16434, @harupy; #16472, @copilot-swe-agent; #16459, @serena-ruan; #16446, #16420, #16447, @frontsideair; #16382, @B-Step62; #16261, @rohitarun-db
+
 ## 3.1.1 (2025-06-25)
 
 MLflow 3.1.1 includes several major features and improvements
