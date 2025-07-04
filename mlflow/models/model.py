@@ -617,7 +617,6 @@ class Model:
     def model_size_bytes(self, value: Optional[int]) -> None:
         self._model_size_bytes = value
 
-    @experimental(version="2.13.0")
     @property
     def resources(self) -> dict[str, dict[ResourceType, list[dict[str, Any]]]]:
         """
@@ -629,7 +628,6 @@ class Model:
         """
         return self._resources
 
-    @experimental(version="2.13.0")
     @resources.setter
     def resources(self, value: Optional[Union[str, list[Resource]]]) -> None:
         if isinstance(value, (Path, str)):
@@ -1592,7 +1590,6 @@ def _validate_llama_index_model(model):
     return _validate_and_prepare_llama_index_model_or_path(model, None)
 
 
-@experimental(version="2.13.0")
 def set_model(model) -> None:
     """
     When logging model as code, this function can be used to set the model object

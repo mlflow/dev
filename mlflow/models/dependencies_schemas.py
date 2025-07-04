@@ -22,7 +22,6 @@ class DependenciesSchemasType(Enum):
     RETRIEVERS = "retrievers"
 
 
-@experimental(version="2.13.0")
 def set_retriever_schema(
     *,
     primary_key: str,

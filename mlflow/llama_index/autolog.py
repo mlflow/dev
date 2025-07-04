@@ -3,7 +3,6 @@ from mlflow.utils.annotations import experimental
 from mlflow.utils.autologging_utils import autologging_integration
 
 
-@experimental(version="2.15.0")
 def autolog(
     log_traces: bool = True,
     disable: bool = False,
