@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## 3.1.2 (2025-07-04)
+
+MLflow 3.1.2 includes several major features and improvements
+
+Features:
+
+- [UI] Experiment home view (#16464, @frontsideair)
+- [Model Registry / UI] Implement UI pagination in model page (#15801, @Flametaa)
+- [Tracking] Add polars dataset (#13006, @AlpAribal)
+- [Tracking] Add support for OpenAI ChatCompletions parse method (#16493, @harupy)
+- [Artifacts / Tracking] Update ArtifactRepository constructors to accept tracking_uri parameter (#16442, @harupy)
+
+Bug fixes:
+
+- [Tracing] Proper chat message reconstruction from OAI streaming response (#16519, @B-Step62)
+- [Tracing] Convert trace column in search_traces() response to JSON string (#16523, @B-Step62)
+- [Models] Refactor: Replace datetime.utcnow() with datetime.now() for consistency in mlflow/models/model.py Resolves #16510 (#16529, @shushantrishav)
+- [Evaluation] Fix mlflow.evaluate crashes in _get_binary_classifier_metrics due to … (#16485, @mohammadsubhani)
+- [Artifacts / Tracking] Fix `download_artifacts` ignoring `tracking_uri` parameter (#16461, @harupy)
+
+Documentation updates:
+
+- [Docs] Fix content issues with tracing docs (#16470, @BenWilson2)
+
+Small bug fixes and documentation updates:
+
+#16477, #16571, #16554, #16552, #16527, #16515, #16452, #16395, #16446, #16420, #16447, @frontsideair; #16543, #16551, #16541, #16526, #16533, #16535, #16531, #16472, @copilot-swe-agent; #16569, #16553, #16345, #16454, #16489, #16486, #16438, #16266, #16382, @B-Step62; #16573, @daniellok-db; #16572, #16558, #16566, #16565, #16563, #16561, #16559, #16544, #16539, #16520, #16508, #16505, #16494, #16495, #16443, #16491, #16487, #16482, #16475, #16473, #16465, #16456, #16458, #16457, #16394, #16449, #16445, #16433, #16434, @harupy; #16509, #16512, #16524, #16514, #16410, #16403, @TomeHirata; #16480, #16479, @shushantrishav; #16513, #16459, @serena-ruan; #16427, @bbqiu; #16261, @rohitarun-db
+
 ## 3.1.1 (2025-06-25)
 
 MLflow 3.1.1 includes several major features and improvements
