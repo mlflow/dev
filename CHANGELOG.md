@@ -1,5 +1,35 @@
 # CHANGELOG
 
+## 3.10.2 (2026-03-09)
+
+MLflow 3.10.2 includes several major features and improvements
+
+Features:
+
+- [Tracking] Add polars dataset support to autologging (#21507, @harupy)
+- [Tracing] Add mlflow.tracing.context() API for injecting metadata/tags without wrapper spans (#21318, @B-Step62)
+- [UI] Add budget dates and current spending for gateway budgets (#21473, @TomeHirata)
+- [Tracing / UI] Improve DSPy trace chat view readability (#21296, @B-Step62)
+- [UI] Add Kubernetes request auth provider plugin (#21176, @HumairAK)
+- [Tracking] Add IS NULL/IS NOT NULL support for tags and params in search_runs (#21283, @TomeHirata)
+- [Tracing / UI] Display clickable gateway trace link in trace explorer (#21316, @TomeHirata)
+
+Bug fixes:
+
+- [Evaluation] Fix gateway provider support in third-party judge integrations (ragas, deepeval, phoenix, trulens) (#21414, @copilot-swe-agent)
+- [] Update Anthropic gateway to use GA structured outputs API (#21436, @TomeHirata)
+- [Tracking] Adds builtin skops trusted types for LightGBM models (#21412, @WeichenXu123)
+- [Tracing / UI] Fix UI flickering in trace review modal during background refetches (#21290, @daniellok-db)
+- [] Add wildcard subdomain support to CORS origins validation (#21468, @arnewouters)
+- [UI] Fix refresh button on evaluation runs page to also refresh traces and assessments (#21332, @B-Step62)
+- [Models] Fix skops serialization format detection in `_load_pyfunc` (#21480, @copilot-swe-agent)
+- [UI] Fix Shift+Enter not creating newlines in assistant chat input (#21341, @smoorjani)
+- [UI] Make retrieved document source URLs clickable in span details view (#21340, @smoorjani)
+
+Small bug fixes and documentation updates:
+
+#21511, #21508, #21501, #21496, #21486, #21485, #21481, #21477, #21474, #21472, #21471, #21464, #21462, #21457, #21459, #21456, #21455, #21452, #21451, #21449, #21448, #21442, @copilot-swe-agent; #21145, #21358, @daniellok-db; #21443, #21444, @PattaraS; #21409, #21360, #21408, #21437, #21189, @serena-ruan; #21405, #21484, #21439, #21440, @harupy; #21120, @TomeHirata; #20795, @WeichenXu123; #21386, @dbczumar; #21446, #21427, @smoorjani; #21424, @danielseong1
+
 ## 3.10.1 (2026-03-05)
 
 MLflow 3.10.1 is a patch release that contains some minor feature enhancements, bug fixes, and documentation updates.
