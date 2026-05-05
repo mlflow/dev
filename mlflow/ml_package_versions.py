@@ -70,11 +70,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "0.12.35",
-            "maximum": "0.14.20"
+            "maximum": "0.14.21"
         },
         "autologging": {
             "minimum": "0.12.35",
-            "maximum": "0.14.20"
+            "maximum": "0.14.21"
         }
     },
     "ag2": {
@@ -192,7 +192,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.38.9",
-            "maximum": "1.42.91"
+            "maximum": "1.42.92"
         }
     },
     "sklearn": {
@@ -420,7 +420,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "2.1.0",
-            "maximum": "2.27.0"
+            "maximum": "2.28.0"
         }
     },
     "sentence_transformers": {
@@ -429,7 +429,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "3.0.0",
-            "maximum": "5.4.0"
+            "maximum": "5.4.1"
         }
     },
     "johnsnowlabs": {
