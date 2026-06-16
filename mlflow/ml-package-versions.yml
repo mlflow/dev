@@ -962,7 +962,7 @@ pydantic_ai:
     # TODO: Bump past 1.94.0 once the tracing tests patch the right model request
     # entrypoint. pydantic-ai >= 1.96 no longer routes through
     # `InstrumentedModel.request`, so the mock is bypassed and tests hit the real API.
-    maximum: "1.94.0"
+    maximum: "1.106.0"
     requirements:
       ">= 0.0.0": ["mcp"]
     run: pytest tests/pydantic_ai
@@ -1107,6 +1107,6 @@ bedrock:
   autologging:
     # BedrockRuntime client is added in boto3 1.33
     minimum: "1.38.37"
-    maximum: "1.43.24"
+    maximum: "1.43.25"
     run: pytest tests/bedrock
     test_tracing_sdk: true
