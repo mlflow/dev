@@ -16,11 +16,11 @@ _ML_PACKAGE_VERSIONS = {
             "pip_release": "openai"
         },
         "models": {
-            "minimum": "1.97.2",
+            "minimum": "1.99.0",
             "maximum": "2.47.0"
         },
         "autologging": {
-            "minimum": "1.97.2",
+            "minimum": "1.99.0",
             "maximum": "2.47.0"
         }
     },
@@ -420,7 +420,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "2.4.0",
-            "maximum": "2.31.0"
+            "maximum": "3.0.0"
         }
     },
     "sentence_transformers": {
@@ -437,7 +437,7 @@ _ML_PACKAGE_VERSIONS = {
             "pip_release": "johnsnowlabs"
         },
         "models": {
-            "minimum": "5.4.0",
+            "minimum": "5.4.2",
             "maximum": "6.4.1"
         }
     }
