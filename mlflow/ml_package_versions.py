@@ -17,11 +17,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "1.105.0",
-            "maximum": "2.47.0"
+            "maximum": "3.5.0"
         },
         "autologging": {
             "minimum": "1.105.0",
-            "maximum": "2.47.0"
+            "maximum": "3.5.0"
         }
     },
     "dspy": {
@@ -84,7 +84,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.9.10",
-            "maximum": "0.14.0"
+            "maximum": "1.0.2"
         }
     },
     "autogen": {
@@ -143,7 +143,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.0.0",
-            "maximum": "2.35.0"
+            "maximum": "2.35.1"
         }
     },
     "smolagents": {
@@ -321,11 +321,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "0.14.3",
-            "maximum": "0.14.6"
+            "maximum": "0.15.0"
         },
         "autologging": {
             "minimum": "0.14.3",
-            "maximum": "0.14.6"
+            "maximum": "0.15.0"
         }
     },
     "spark": {
@@ -437,7 +437,7 @@ _ML_PACKAGE_VERSIONS = {
             "pip_release": "johnsnowlabs"
         },
         "models": {
-            "minimum": "5.4.0",
+            "minimum": "5.4.4",
             "maximum": "6.4.1"
         }
     }
