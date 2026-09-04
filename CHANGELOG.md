@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 3.16.1 (2026-09-04)
+
+MLflow 3.16.1 includes several major features and improvements
+
+Bug fixes:
+
+- [Evaluation / Tracking] Release Databricks SDK connections in `rest_utils.http_request` (#25561, @TimMsnBlueforte)
+- [Tracing] Ignore cross-async-context `ValueError` when detaching a span (#22945, @SahilKumar75)
+- [Tracing / UI] Add span link UI to redesigned trace explorer (#25573, @B-Step62)
+- [Model Registry] Reject IPv6-transition addresses embedding private IPv4 in webhook SSRF guard (#25568, @kriscon-db)
+
+Documentation updates:
+
+- [Build] Nudge Copilot code review to verify when it's cheap (#25586, @copilot-swe-agent)
+
+Small bug fixes and documentation updates:
+
+#25586, @copilot-swe-agent; #25582, #25580, #25565, @joshuawong-db; #25557, @kriscon-db
+
 ## 3.16.0 (2026-09-03)
 
 MLflow 3.16.0 includes several major features and improvements
