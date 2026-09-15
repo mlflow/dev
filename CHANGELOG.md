@@ -1,5 +1,84 @@
 # CHANGELOG
 
+## 3.16.1 (2026-09-15)
+
+MLflow 3.16.1 includes several major features and improvements
+
+Breaking changes:
+
+- [Docs / Tracking] Remove the default basic-auth admin password shipped in `basic_auth.ini` (GHSA-gq3w-7jj3-x7gr) (#25751, @tanghaoji)
+
+Features:
+
+- [Tracking] Add `mlflow.restore_experiment()` and `mlflow.restore_run()` to the fluent API (#25852, @avanish-garg)
+- [] feat: add topology spread constraints (#25778, @daanknoope)
+- [Docs / Tracing] Add source metadata to TypeScript agent traces (#25825, @B-Step62)
+- [Model Registry / UI] Add a source logged model link to the model version page (#25727, @rrioh)
+- [Build / Docs] `charts`: Expose Helm liveness/readiness/startup probes as configuration variables (#25560, @creater29)
+- [Evaluation] Add a `timeout` option to the `@scorer` decorator (#25720, @smoorjani)
+- [Tracing] Support span links for Unity Catalog traces (#25597, @B-Step62)
+- [Gateway / UI] Add runtime feature toggle to disable AI Gateway via \`MLFLOW_ENABLE_AI_GATEWAY\` (#25236, @DaoDaoNoCode)
+- [UI] Add dataset ID to UI (#25234, @janald99)
+- [Tracing] Add first-class span description support to `@mlflow.trace` and `mlflow.start_span` (#25548, @Rohitkanithi)
+
+Bug fixes:
+
+- [Gateway] Fix Gemini `thoughtSignature` placement in AI Gateway adapter (#25865, @aytero)
+- [Tracing / Tracking] Sanitize CrewAI LLM credentials from `mlflow.crewai.autolog` spans (GHSA-j7qq-vr8c-xvw3) (#25845, @tanghaoji)
+- [Gateway] Post Vertex AI MaaS raw proxy requests to the `/endpoints/openapi` base URL (#25834, @rhamzatov)
+- [Models] Validate `pt2` archives when `MLFLOW_ALLOW_PICKLE_DESERIALIZATION` is disabled (#25849, @tanghaoji)
+- [Gateway] Add `vertex_anthropic_betas` to control `anthropic-beta` forwarding for Claude on Vertex AI (#25835, @rhamzatov)
+- [Gateway / Tracking] Require USE on the gateway secret for `issues/invoke` (GHSA-2m86-c5q7-rxgr) (#25848, @tanghaoji)
+- [Gateway] Forward `VertexAIProvider` passthrough and proxy routes to its Claude/MaaS delegates (#25833, @rhamzatov)
+- [Docs / Gateway] Validate gateway secret `api_base` to prevent SSRF (GHSA-h7x2-h6g9-p789) (#25761, @tanghaoji)
+- [Tracking] Bound `_hard_delete_run` memory with bulk deletes (#25773, @dyld-w)
+- [Tracing] Fix Codex authentication with `databricks://<profile>` (#25823, @B-Step62)
+- [Tracing] Honor `CODEX_HOME` when locating Codex transcripts (#25822, @B-Step62)
+- [Evaluation / Gateway / Tracking] Fix `ScorerVersion` experiment ID type after REST hydration (#25768, @CoralGarden52)
+- [Tracking] Roll back the experiment when trace-location linking fails in `create_experiment` (#25604, @adamgurary)
+- [Gateway] Map `top_p` to `topP` in the Bedrock Titan and AI21 completions adapters (#25795, @Yash-Chindam)
+- [Tracing / UI] Fix token totals for grouped trace sessions (#25608, @adamgurary)
+- [Tracing] Fix `strands.autolog` crash on foreign OpenTelemetry spans (#25807, @Hasnaathussain)
+- [Model Registry] Fix S3 multipart upload encryption arguments (#25772, @james-fletcher-db)
+- [Models / Scoring] Bound apt socket timeouts in generated serving Dockerfiles (#25800, @copilot-swe-agent)
+- [Tracing / UI] Fix custom trace views in the session trace drawer (#25779, @joshuawong-db)
+- [Tracking] Fail fast in `mlflow server` when `MLFLOW_FLASK_SERVER_SECRET_KEY` is unset for `basic-auth` (#25754, @tanghaoji)
+- [Gateway] fix(gateway): stop forwarding client auth headers on passthrough routes (#25129, @uuzzrm)
+- [UI] Fix session-level scorer evaluation silently dropping selected sessions (#24937, @demonze)
+- [Tracking] Preserve the original exception when cleanup fails in `remove_on_error` (#25626, @NestDream)
+- [] Enable async trace logging by default for Claude Code (#25541, @mukeshbhandarkar)
+- [Tracking / UI] basic-auth: serve the web UI to non-admins under fail-closed authorization (#25672, @mkBGD)
+- [Evaluation / Tracking] Authorize `scorer/invoke` and bind traces to the caller's experiment (GHSA-6c27-cp6h-c66m) (#25721, @kriscon-db)
+- [Build] Fail the `mlflow-skinny`/`mlflow-tracing` build instead of shipping an empty wheel (#25713, @siddharthgaur1)
+- [Evaluation] Fix `evaluate` list input normalization for NumPy targets (#25623, @CoralGarden52)
+- [Tracking] Enforce password policy on the basic-auth password-update path (GHSA-v67f-7g57-fjhv) (#25722, @kriscon-db)
+- [Gateway] Preserve an unset `max_attempts` in `FallbackConfig.from_proto` (#25532, @VenishPaneliya)
+- [UI] Fix Assistant Bash execution on Windows selector loops (#25687, @joshuawong-db)
+- [UI] Fix MLflow Assistant CLI providers on Windows with >1 server worker (#24418, @joshuawong-db)
+- [Scoring] Reject unsupported `env_manager` values when building a model container (#25514, @alekseevpavel04)
+- [Model Registry] Return None for unset deployment_job_state in UC model-version converters (#25690, @kriscon-db)
+- [Model Registry] Fix `ModelVersion.to_proto` dropping `deployment_job_state` (#25635, @2sumtech)
+- [Server-infra] Count fragment selections in GraphQL query-cost limits (#25665, @kriscon-db)
+- [Server-infra / Tracking] Require model_id permission for LogMetric/LogBatch metric routing (#25664, @kriscon-db)
+- [Tracing / Tracking] Avoid re-serializing unmodified LazySpan JSON on get-trace-artifact. (#24569, @shivamAmrutia)
+- [Evaluation / Gateway] fix(gateway): apply Vertex Anthropic request fields in `adapter_class` so judges work (#25556, @Yash-Chindam)
+- [Evaluation] Fix bullet stripping eating leading hyphens in failure labels (#25588, @copilot-swe-agent)
+- [Evaluation / Tracking] Release Databricks SDK connections in `rest_utils.http_request` (#25561, @TimMsnBlueforte)
+- [Tracing] Ignore cross-async-context `ValueError` when detaching a span (#22945, @SahilKumar75)
+- [Tracing / UI] Add span link UI to redesigned trace explorer (#25573, @B-Step62)
+- [Model Registry] Reject IPv6-transition addresses embedding private IPv4 in webhook SSRF guard (#25568, @kriscon-db)
+
+Documentation updates:
+
+- [Docs] Replace MinIO with RustFS in `mlflow_artifacts` example (#25808, @copilot-swe-agent)
+- [Docs] Document missing span types WORKFLOW, TASK, GUARDRAIL and EVALUATOR (#25736, @setsaa)
+- [Docs / Model Registry / Prompts] Correct `register_prompt` return type documentation (#25650, @copilot-swe-agent)
+- [Build] Nudge Copilot code review to verify when it's cheap (#25586, @copilot-swe-agent)
+
+Small bug fixes and documentation updates:
+
+#25866, #25864, #25850, #25846, #25836, #25828, #25819, #25815, #25816, #25814, #25813, #25812, #25811, #25810, #25809, #25804, #25801, #25787, #25786, #25782, #25770, #25765, #25763, #25759, #25758, #25757, #25753, #25752, #25738, #25737, #25731, #25729, #25726, #25724, #25725, #25723, #25705, #25691, #25689, #25688, #25678, #25677, #25674, #25673, #25671, #25669, #25668, #25667, #25661, #25658, #25657, #25656, #25655, #25654, #25652, #25651, #25645, #25642, #25633, #25631, #25628, #25625, #25624, #25620, #25622, #25621, #25619, #25617, #25616, #25614, #25611, #25605, #25603, #25602, #25596, #25594, #25595, #25591, #25592, #25590, #25586, @copilot-swe-agent; #25134, @MarkHe1222; #25719, #25803, #25570, @B-Step62; #25717, @acheamponge; #25583, @hpenedones; #25694, #25582, #25580, #25565, @joshuawong-db; #25539, @gustaff-weldon; #25686, #25685, #25684, #25557, @kriscon-db; #25644, @adamgurary; #25636, @chenlichao
+
 ## 3.16.0 (2026-09-03)
 
 MLflow 3.16.0 includes several major features and improvements
