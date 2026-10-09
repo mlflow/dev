@@ -1,5 +1,53 @@
 # CHANGELOG
 
+## 3.17.1 (2026-10-09)
+
+MLflow 3.17.1 includes several major features and improvements
+
+Features:
+
+- [Tracing] Trace OpenAI Decisions calls in TypeScript (#26576, @B-Step62)
+- [Docs / Tracing / Tracking] Trace OpenAI Decisions calls in Python (#26575, @B-Step62)
+- [Tracing] Fix Claude Code OTel trace rendering in the MLflow UI (#26547, @joshuawong-db)
+- [Evaluation] Add `mlflow.genai.databricks.review_queues` for managing review queues on Databricks (#26414, @harupy)
+- [UI] [FR] Make the experiment run Columns selector resizable (#26313, @LockedThread)
+- [Tracing / UI] Add rich rendering for TypeSafe System One traces (#26276, @B-Step62)
+- [Build] Show triage progress in an issue comment (#26454, @copilot-swe-agent)
+- [Docs / Evaluation] Allow custom `base_url` for direct TypeSafe judges (#26445, @B-Step62)
+- [Docs / Gateway] Allow custom `typesafe_api_base` for TypeSafe Gateway endpoints (#26442, @B-Step62)
+- [Evaluation / Tracking] Support `name IN (...)` filters for evaluation-dataset search (#26374, @HumairAK)
+
+Bug fixes:
+
+- [Model Registry] Reject unsupported null filters in `search_registered_models` and `search_model_versions` (#26600, @copilot-swe-agent)
+- [Evaluation] Report unparsable judge scores as errors in `TruLensScorer` (#26574, @copilot-swe-agent)
+- [Gateway] Fix `parallel_tool_calls` translation for Anthropic and Vertex Claude (#26523, @copilot-swe-agent)
+- [Models / Scoring] Fix tensor schema enforcement for non-default `DataFrame` indexes (#26462, @aswanth-07)
+- [Tracing / UI] Improve framework icon contrast in `LogTracesDrawer` dark mode (#26563, @copilot-swe-agent)
+- [UI] Fix tool charts showing numbers instead of dates for a tool named `timestamp` (#26549, @copilot-swe-agent)
+- [Gateway / Tracing / Tracking] Honor `--static-prefix` in server job tracking URIs (#26546, @copilot-swe-agent)
+- [Tracking] Reject whitespace-only experiment names (#26362, @palindromeRice)
+- [Tracing / Tracking] Fix `_create_table` headers for empty CLI results (#26503, @BlueRaddish)
+- [Scoring] Fix `dump_input_data` serialization of dict inputs (#26519, @copilot-swe-agent)
+- [Tracing] Fix cache-inclusive token totals in `mlflow.claude_code` (#26510, @B-Step62)
+- [Tracking] Fix `search_logged_models` status filters never matching on SQL store (#26512, @copilot-swe-agent)
+- [Evaluation] Fix multipart response extraction in `parse_outputs_to_str` (#26451, @james-fletcher-db)
+- [Gateway] Propagate token usage in Mistral gateway streaming responses (#26440, @maharanay22)
+- [Gateway] Normalize list `delta.content` in Databricks gateway streaming (#26439, @maharanay22)
+- [Evaluation] Use the baseline's magnitude in min_relative_change checks (#26252, @mavericksea-ai)
+- [UI] Support wrapped MCP registry server definitions (#25764, @mprahl)
+- [Tracing / Tracking] Fix decimal metric sums and reduce SQL trace query and rollup overhead (#26369, @HumairAK)
+- [Evaluation] Fix `EvaluationDataset` hashing for list-valued targets and predictions (#26433, @LE0-Lin)
+- [Tracking] Fix MCP server `version` filters rewriting quoted values (#26423, @Amazinghorseli)
+
+Documentation updates:
+
+- [Docs / Tracing] Update bundled `mlflow/assistant/skills` to latest upstream (#26455, @B-Step62)
+
+Small bug fixes and documentation updates:
+
+#26603, #26602, #26599, #26592, #26584, #26583, #26565, #26562, #26553, #26552, #26472, #26540, #26511, #26528, #26522, #26515, #26513, #26505, #26506, #26501, #26500, #26492, #26490, #26487, #26488, #26486, #26479, #26466, #26465, #26469, #26457, #26456, @copilot-swe-agent; #25841, #26588, #26589, @kriscon-db; #26541, #26352, @harupy; #26514, #26476, #26467, #26458, @tanghaoji; #26461, @joshuawong-db; #26427, @B-Step62
+
 ## 3.17.0 (2026-10-06)
 
 MLflow 3.17.0 includes several major features and improvements.
