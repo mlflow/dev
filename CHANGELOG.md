@@ -1,5 +1,64 @@
 # CHANGELOG
 
+## 3.17.3 (2026-10-23)
+
+MLflow 3.17.3 includes several major features and improvements
+
+Breaking changes:
+
+- [Tracking] Fix case-sensitive MCP server version identity (#25920, @LobsterQBA)
+
+Features:
+
+- [UI] Add saved custom trace views to review queue focused review (#26913, @joshuawong-db)
+- [] feat: add opt-in hpa to helm chart (#26888, @DrTuup)
+- [Models] Add `MLFLOW_DISABLE_PYFUNC_LOADER_MODULE` opt-in guard (#27027, @mprahl)
+- [UI] Offer a copyable coding-agent fix prompt on a detected issue (#26961, @tanghaoji)
+- [UI] Show detection progress and allow cancelling it from the Issues tab (#26955, @tanghaoji)
+- [Evaluation / Tracing / UI] Detect cost anomalies and generate span-anchored evidence for issue detection (#26919, @tanghaoji)
+- [Evaluation / UI] Turn on the new eval runs UI (#26991, @joshuawong-db)
+- [Evaluation / Tracing / UI] Add GenAI journey overview (#26636, @B-Step62)
+- [Docs / Evaluation] Add an experimental `quality_criteria` parameter to `mlflow.genai.evaluate` (#26471, @joshuawong-db)
+- [Docs / Evaluation] Add `mlflow.genai.compare_evaluations` for paired statistical comparison of evaluation runs (#26396, @AbdulAliMamnun)
+- [Docs / Tracking] Include allowed actions in Skill Registry responses (#26900, @bardenr)
+
+Bug fixes:
+
+- [Tracing / Tracking] Block client writes to the `mlflow.artifactLocation` trace tag (#27031, @joshuawong-db)
+- [Tracking] Ignore case when matching the reserved `workspaces/` artifact prefix (#27039, @joshuawong-db)
+- [Tracking] Ignore case when classifying artifact proxy path tiers (#27037, @joshuawong-db)
+- [Tracking] Strip the static prefix before matching public routes in `is_unprotected_route` (#27036, @joshuawong-db)
+- [Tracing] Keep traces for tools declared without parameter properties (#26974, @pcbeingused333)
+- [Tracing] Keep traced string outputs that look like JSON as strings when logging spans to the SQL store (#26968, @r14dd)
+- [Tracing / UI] Fix the span search crash on deeply nested traces and show OTel span cache tokens in the trace explorer (#26794, @joshuawong-db)
+- [Tracking] Validate trace ids as single path components in `FileStore` (#26979, @tanghaoji)
+- [Docs / Evaluation / Tracking] Match scorer names exactly in the SQLAlchemy tracking store (#26977, @kriscon-db)
+- [Evaluation] Keep the result of a custom `@scorer` whose body is on the `def` line (#26972, @kriscon-db)
+- [Tracing] Parallelize archived trace payload deletion in `SqlAlchemyStore` (#26985, @its-amann)
+- [Tracking] Fix:  MCP tool discovery to try matching endpoints in order (#26948, @dbasunag)
+- [Tracking] Fix case-sensitive MCP server version identity (#25920, @LobsterQBA)
+- [Docs / Evaluation / Model Registry / Tracking / UI] Fix presigned artifact transfer regressions (#26978, @mprahl)
+- [Tracking] Apply permission grants to every spelling of an experiment ID (#26917, @kriscon-db)
+- [Tracking] Set a job's workspace only for its thread in the Huey job consumer (#26963, @kriscon-db)
+- [Evaluation] Refuse custom scorer jobs that the custom scorer backend cannot run (#26958, @kriscon-db)
+- [Evaluation] Check the job executor backends when server processes start, and log a repeated online scoring scheduler failure once (#26879, @kriscon-db)
+- [Tracking] Stop `mlflow server` when its job runner fails (#26878, @kriscon-db)
+- [Evaluation] Reject a custom scorer whose source code is empty or cannot be read (#26872, @kriscon-db)
+- [Evaluation / Tracking] Check scorer permissions on the online scoring config endpoints (#26877, @kriscon-db)
+- [Evaluation] Use the stored JSON of a registered scorer in the invoke and evaluate handlers (#26874, @kriscon-db)
+- [Tracking] Forward the output of local executor jobs to the server log (#26875, @kriscon-db)
+- [Evaluation] Say when a job container ran out of memory (#26871, @kriscon-db)
+- [Tracing] Preserve span link IDs during OTLP JSON ingestion in `otel_api.py` (#26940, @vatsalyd)
+- [Tracking] fix: Prefer MCP access endpoints over server.json remotes during tool refresh (#26719, @dbasunag)
+
+Documentation updates:
+
+- [Build / Docs] Document stacked PR guidance in `CLAUDE.md` (#26957, @copilot-swe-agent)
+
+Small bug fixes and documentation updates:
+
+#27050, #27047, #27045, #27033, #27032, #27020, #27024, #27023, #27016, #26962, #26957, #26951, #26938, @copilot-swe-agent; #26868, #26912, #27034, #27029, #26808, #26803, #26799, #26993, #26784, #26927, #26783, #26952, @joshuawong-db; #26981, #27017, #26983, @tanghaoji; #27021, #27013, #26953, @harupy; #26867, #26960, #25307, @kriscon-db; #26946, @nananosirova
+
 ## 3.17.2 (2026-10-20)
 
 MLflow 3.17.2 is a patch release that contains a minor feature enhancement and bug fixes.
