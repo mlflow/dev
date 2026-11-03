@@ -17,11 +17,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "2.7.0",
-            "maximum": "2.47.0"
+            "maximum": "3.39.0"
         },
         "autologging": {
             "minimum": "2.7.0",
-            "maximum": "2.47.0"
+            "maximum": "3.39.0"
         }
     },
     "dspy": {
@@ -56,11 +56,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "1.0.3",
-            "maximum": "1.2.16"
+            "maximum": "1.2.18"
         },
         "autologging": {
             "minimum": "1.0.3",
-            "maximum": "1.2.16"
+            "maximum": "1.2.18"
         }
     },
     "llama_index": {
@@ -69,11 +69,11 @@ _ML_PACKAGE_VERSIONS = {
             "module_name": "llama_index.core"
         },
         "models": {
-            "minimum": "0.14.7",
+            "minimum": "0.14.8",
             "maximum": "0.14.25"
         },
         "autologging": {
-            "minimum": "0.14.7",
+            "minimum": "0.14.8",
             "maximum": "0.14.25"
         }
     },
@@ -84,7 +84,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.10.1",
-            "maximum": "0.14.0"
+            "maximum": "1.2.1"
         }
     },
     "autogen": {
@@ -113,7 +113,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "0.72.1",
-            "maximum": "2.2.0"
+            "maximum": "2.3.0"
         }
     },
     "typesafe": {
@@ -132,8 +132,8 @@ _ML_PACKAGE_VERSIONS = {
             "module_name": "crewai"
         },
         "autologging": {
-            "minimum": "1.3.0",
-            "maximum": "1.15.29"
+            "minimum": "1.4.0",
+            "maximum": "1.15.30"
         }
     },
     "agno": {
@@ -142,7 +142,7 @@ _ML_PACKAGE_VERSIONS = {
             "module_name": "agno"
         },
         "autologging": {
-            "minimum": "2.2.6",
+            "minimum": "2.2.7",
             "maximum": "3.1.10"
         }
     },
@@ -152,8 +152,8 @@ _ML_PACKAGE_VERSIONS = {
             "module_name": "pydantic_ai"
         },
         "autologging": {
-            "minimum": "1.9.1",
-            "maximum": "2.60.0"
+            "minimum": "1.10.0",
+            "maximum": "2.62.0"
         }
     },
     "smolagents": {
@@ -183,7 +183,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "autologging": {
             "minimum": "1.10.0",
-            "maximum": "3.4.0"
+            "maximum": "3.5.0"
         }
     },
     "groq": {
@@ -201,8 +201,8 @@ _ML_PACKAGE_VERSIONS = {
             "module_name": "boto3"
         },
         "autologging": {
-            "minimum": "1.40.64",
-            "maximum": "1.43.118"
+            "minimum": "1.40.65",
+            "maximum": "1.43.119"
         }
     },
     "sklearn": {
@@ -322,7 +322,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "3.8.3",
-            "maximum": "3.8.16"
+            "maximum": "3.8.18"
         }
     },
     "statsmodels": {
@@ -375,7 +375,7 @@ _ML_PACKAGE_VERSIONS = {
             "pip_release": "h2o"
         },
         "models": {
-            "minimum": "3.46.0.6",
+            "minimum": "3.46.0.7",
             "maximum": "3.46.0.12"
         }
     },
@@ -385,7 +385,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "0.47.0",
-            "maximum": "0.52.0"
+            "maximum": "0.54.1"
         }
     },
     "paddle": {
@@ -407,11 +407,11 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "4.46.2",
-            "maximum": "5.20.2"
+            "maximum": "5.21.0"
         },
         "autologging": {
             "minimum": "4.46.2",
-            "maximum": "5.20.2"
+            "maximum": "5.21.0"
         }
     },
     "diffusers": {
@@ -420,7 +420,7 @@ _ML_PACKAGE_VERSIONS = {
         },
         "models": {
             "minimum": "0.37.0",
-            "maximum": "0.42.0"
+            "maximum": "0.42.1"
         }
     },
     "haystack": {
